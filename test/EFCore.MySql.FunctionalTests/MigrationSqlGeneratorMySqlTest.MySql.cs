@@ -134,7 +134,6 @@ ALTER TABLE `Cars` ADD CONSTRAINT `FK_Cars_LicensePlates_LicensePlateNumber` FOR
                 },
                 default,
                 null,
-                null,
                 (schemaName, objectName) => $"{schemaName}_{objectName}");
 
             Assert.Equal(
